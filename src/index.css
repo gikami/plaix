@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700;800&display=swap');
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+}
+h1, p {
+  margin: 0;
+}
+/* start of header section */
+.header {
+  margin: 0 auto;
+  max-width: 1588px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.child2__ul {
+  display: flex;
+  padding: 0;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  color: #181818;
+}
+.header li {
+  list-style: none;
+  margin-right: 56px;
+}
+li:last-child {
+  margin-right: 0;
+}
+/* end of header section */
+
+/* start of Title section */
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1588px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-child1 span {
+  color: #F59626;
+}
+
+.title-child1 h2 {
+  font-weight: 600;
+  font-size: 76px;
+  line-height: 76px;
+  margin-bottom: 15px;
+}
+.title-child1 h1 {
+  position: absolute;
+  font-weight: 800;
+  font-size: 170px;
+  line-height: 179px;
+  color: #F9F9F9;
+  width: 1336px;
+  z-index: -1;
+  top: 215px;
+}
+
+.title-child1 p {
+  max-width: 650px;
+  color: #AAA8A8;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 46px;
+}
+
+.title-child1 button {
+  width: 370px;
+  height: 76px;
+  color: white;
+  background-color: #B479F8;
+  border-style: none;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+/* end of Title section */
