@@ -24,13 +24,31 @@ h1, p {
   line-height: 25px;
   color: #181818;
 }
-.header li {
+.header a {
   list-style: none;
   margin-right: 56px;
 }
-li:last-child {
+a:last-child {
   margin-right: 0;
 }
+.child2__ul a {
+  text-decoration: none;
+  color:black;
+}
+.header button {
+  background-image: url(/src/assets/images/arrow.jpg);
+  height: 23px;
+  width: 23px;
+  border-style: none;
+  cursor: pointer;
+}
+.child2-arrow {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 56px;
+  
+}
+
 /* end of header section */
 
 /* start of Title section */
@@ -57,12 +75,15 @@ li:last-child {
 .title-child1 h1 {
   position: absolute;
   font-weight: 800;
-  font-size: 170px;
+  font-size: 200px;
   line-height: 179px;
   color: #F9F9F9;
   width: 1336px;
   z-index: -1;
-  top: 215px;
+  top: 260px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .title-child1 p {
@@ -86,5 +107,92 @@ li:last-child {
   font-size: 26px;
   line-height: 26px;
 }
+.title-child2 {
+  width: 851px;
+  height: 695px;
+}
+.title-child2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 
 /* end of Title section */
+
+
+/* services */
+
+.services-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1294px;
+}
+
+.services-child{
+  width: 396px;
+  height: 347px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.services-child1 {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 34px;
+  height: 279px;
+  max-width: 341px;
+}
+.services-child1 img {
+  margin-bottom: 12px;
+}
+.services-child1 h1 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 18px;
+}
+
+.services-child1 p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 35.5px;
+}
+.services-line {
+  margin: 0 auto;
+  border-style: solid;
+  color: #F59626;
+  border-width: 2px;
+  max-width: 214px;
+  margin-bottom: 20px;
+}
+
+.services-child1 a {
+  text-decoration: none;
+  background-color: #E0C8FC;
+  border-radius: 5px;
+  padding: 13.5px 56.5px;
+  color: #9A4AF6;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* end of services */
+
+/* attendance start */
+.attendance {
+  background-image: url(/src/assets/images/background1.jpg);
+  max-width: 1895px;
+  height: 1139px;
+}
+.underline-h1 {
+  display: flex;
+  flex-direction: row;
+}
+.attendance-underline {
+  border-style: dashed;
+  width: 25px;
+}
+/* attendance end */

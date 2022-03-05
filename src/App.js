@@ -1,11 +1,11 @@
 import Header from "./Header";
-import Title from "./Title";
+import Page from "./Page";
 
 function App() {
   return (
     <div>
       <Header />
-      <Title />
+      <Page />
       {/* <Services />
       <Us />
       <Offers />
