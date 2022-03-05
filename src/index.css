@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700;800&display=swap");
 body {
   margin: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
-h1, p {
+h1,
+p {
   margin: 0;
 }
 /* start of header section */
@@ -33,7 +34,7 @@ a:last-child {
 }
 .child2__ul a {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 .header button {
   background-image: url(/src/assets/images/arrow.jpg);
@@ -46,7 +47,6 @@ a:last-child {
   display: flex;
   justify-content: flex-start;
   margin-right: 56px;
-  
 }
 
 /* end of header section */
@@ -63,7 +63,7 @@ a:last-child {
   align-items: center;
 }
 .title-child1 span {
-  color: #F59626;
+  color: #f59626;
 }
 
 .title-child1 h2 {
@@ -77,7 +77,7 @@ a:last-child {
   font-weight: 800;
   font-size: 200px;
   line-height: 179px;
-  color: #F9F9F9;
+  color: #f9f9f9;
   width: 1336px;
   z-index: -1;
   top: 260px;
@@ -88,7 +88,7 @@ a:last-child {
 
 .title-child1 p {
   max-width: 650px;
-  color: #AAA8A8;
+  color: #aaa8a8;
   font-weight: 300;
   font-size: 36px;
   line-height: 36px;
@@ -100,7 +100,7 @@ a:last-child {
   width: 370px;
   height: 76px;
   color: white;
-  background-color: #B479F8;
+  background-color: #b479f8;
   border-style: none;
   border-radius: 10px;
   font-weight: 400;
@@ -119,7 +119,6 @@ a:last-child {
 
 /* end of Title section */
 
-
 /* services */
 
 .services-container {
@@ -130,7 +129,7 @@ a:last-child {
   max-width: 1294px;
 }
 
-.services-child{
+.services-child {
   width: 396px;
   height: 347px;
   border-radius: 10px;
@@ -162,7 +161,7 @@ a:last-child {
 .services-line {
   margin: 0 auto;
   border-style: solid;
-  color: #F59626;
+  color: #f59626;
   border-width: 2px;
   max-width: 214px;
   margin-bottom: 20px;
@@ -170,10 +169,10 @@ a:last-child {
 
 .services-child1 a {
   text-decoration: none;
-  background-color: #E0C8FC;
+  background-color: #e0c8fc;
   border-radius: 5px;
   padding: 13.5px 56.5px;
-  color: #9A4AF6;
+  color: #9a4af6;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -183,16 +182,112 @@ a:last-child {
 
 /* attendance start */
 .attendance {
-  background-image: url(/src/assets/images/background1.jpg);
+  background: url(/src/assets/images/background1.jpg);
   max-width: 1895px;
-  height: 1139px;
 }
-.underline-h1 {
+.attendance-wrapper {
+  margin: 0 auto;
+  max-width: 1588px;
+}
+.container1 h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+.container1 {
+  margin-bottom: 12px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
-.attendance-underline {
-  border-style: dashed;
-  width: 25px;
+.container1-underline {
+  display: inline-block;
+  border-style: solid;
+  width: 111px;
+  border-width: 2px;
+  color: #9a4af6;
+  margin-right: 21px;
 }
+.attendance-p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #9a4af6;
+  margin-bottom: 68px;
+}
+
+.attendance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 63px;
+}
+.grid-elem {
+  border-radius: 20px;
+  background-color: white;
+  max-width: 396px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.grid-elem img {
+  margin-bottom: 24px;
+}
+
+.grid-text {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 333px;
+}
+
+.grid-text h1 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 11px;
+}
+.grid-line {
+  margin: 0 auto;
+  border-style: solid;
+  max-width: 214px;
+  border-width: 2px;
+  color: #F59626;
+  margin-bottom: 18px;
+}
+.grid-text p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #636363;
+  margin-bottom: 24px;
+  text-align: left;
+}
+.grid-text a {
+  display: block;
+  margin-bottom: 26px;
+  color: #9A4AF6;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
 /* attendance end */
+
+/* work */
+
+.work {
+  max-width: 1895px;
+  margin: 0 auto;
+}
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.work-container div {
+  width: 100px;
+  height: 100px;
+  background-color: #aaa8a8;
+}
+
+/* end of work */
