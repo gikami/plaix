@@ -117,9 +117,11 @@ a:last-child {
   object-fit: contain;
 }
 
+
 /* end of Title section */
 
-/* services */
+/* triplet */
+
 
 .services-container {
   margin: 0 auto;
@@ -178,7 +180,7 @@ a:last-child {
   line-height: 24px;
 }
 
-/* end of services */
+/* end of triplet */
 
 /* attendance start */
 .attendance {
@@ -219,9 +221,11 @@ a:last-child {
 
 .attendance-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 396px);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 63px;
+  margin: 0 auto;
+  max-width: 1314px;
 }
 .grid-elem {
   border-radius: 20px;

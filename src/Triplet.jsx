@@ -1,7 +1,6 @@
 
 
-function Service(props) {
-    console.log(props.info)
+function Triplet(props) {
     return(
         <div className="services-child">
         <div className="services-child1">
@@ -16,4 +15,4 @@ function Service(props) {
 }
 
 
-export default Service;
+export default Triplet;

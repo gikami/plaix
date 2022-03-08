@@ -1,21 +1,19 @@
-
 import Header from "./Header";
-import Service from "./Service";
+import Triplet from "./Triplet";
 import Services from "./Services";
 import guy from "./assets/images/image1.png";
 import star from "./assets/images/responses.jpg";
 import brain from "./assets/images/go.jpg";
 import portfolio from "./assets/images/portfolio.jpg";
-import web from "./assets/images/web.jpg";
-import mobil from "./assets/images/mobil.jpg";
-import design from "./assets/images/design.jpg";
-import promotion from "./assets/images/promotion.jpg";
-import social from "./assets/images/social.jpg";
-import bot from "./assets/images/bot.jpg";
-import plaix from "./assets/images/plaix1.svg"
+import web from "./assets/images/web.png";
+import mobil from "./assets/images/mobil.png";
+import design from "./assets/images/design.png";
+import promotion from "./assets/images/promotion.png";
+import social from "./assets/images/social.png";
+import bot from "./assets/images/bot.png";
+import laptop from "./assets/images/laptop.png";
 
 function App() {
-
   const service = {
     portfolio: {
       img: portfolio,
@@ -39,7 +37,7 @@ function App() {
       alt: "мозг",
     },
   };
-  
+
   const services = {
     web: {
       img: web,
@@ -81,54 +79,77 @@ function App() {
   return (
     <div>
       <Header />
-    <div className="wrapper">
-      <div className="title">
-        <div className="title-child1">
-          <h1>LOREM IPSUM DOLOR</h1>
-          <h2>
-            <span>Lorem</span> ipsum dolor
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus
-            nibh diam morbi id.
-          </p>
-          <button>ЗАКАЗАТЬ ПРОЕКТ</button>
+      <div className="wrapper">
+        <div className="title">
+          <div className="title-child1">
+            <h1>LOREM IPSUM DOLOR</h1>
+            <h2>
+              <span>Lorem</span> ipsum dolor
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              tempus nibh diam morbi id.
+            </p>
+            <button>ЗАКАЗАТЬ ПРОЕКТ</button>
+          </div>
+          <div className="title-child2">
+            <img src={guy} alt="title guy" />
+          </div>
         </div>
-        <div className="title-child2">
-          <img src={guy} alt="title guy" />
-        </div>
-      </div>
 
-      {/* services */}
-      <div className="services-container">
-        <Service info={service.portfolio} />
-        <Service info={service.recommendations} />
-        <Service info={service.insrtuments} />
-      </div>
-      {/* наши услуги */}
-      <div className="attendance">
-        <div className="attendance-wrapper">
+        {/* triplet */}
+
+        <div className="services-container">
+          <Triplet info={service.portfolio} />
+          <Triplet info={service.recommendations} />
+          <Triplet info={service.insrtuments} />
+        </div>
+
+        {/* наши услуги */}
+        <div className="attendance">
+          <div className="attendance-wrapper">
+            <div className="container1">
+              <div className="container1-underline"></div>
+              <h1>Наши услуги</h1>
+            </div>
+            <div className="attendance-p">
+              <p>LOREM IPSUM DOLOR SIT AMET</p>
+            </div>
+            <div className="attendance-grid">
+              <Services info={services.web} />
+              <Services info={services.mobil} />
+              <Services info={services.design} />
+              <Services info={services.promotion} />
+              <Services info={services.social} />
+              <Services info={services.bot} />
+            </div>
+          </div>
+        </div>
+        {/* конец наши услуги */}
+
+        <div>
           <div className="container1">
             <div className="container1-underline"></div>
-            <h1>Наши услуги</h1>
+            <h1>Поработаем?</h1>
           </div>
           <div className="attendance-p">
-            <p>LOREM IPSUM DOLOR SIT AMET</p>
+            <p>
+              ЗАПОЛНИТЕ ФОРМУ И НАШ МЕНЕДЖЕР СВЯЖЕТСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ
+            </p>
           </div>
-          <div className="attendance-grid">
-            <Services info={services.web} />
-            <Services info={services.mobil} />
-            <Services info={services.design} />
-            <Services info={services.promotion} />
-            <Services info={services.social} />
-            <Services info={services.bot} />
+          <div className="work-flex">
+            <div className="work-flex__child1">
+              <img src={laptop}></img>
+              <button>ЗАПОЛНИТЬ БРИФ</button>
+            </div>
+            <div className="work-flex__child2">
+              <form>
+
+              </form>
+            </div>
           </div>
         </div>
       </div>
-      {/* конец наши услуги */}
-
-    </div>
-
     </div>
   );
 }

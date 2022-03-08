@@ -1,8 +1,8 @@
-function Main() {
+function Services() {
     return (
         <div>
         </div>
     )
 }
 
-export default Main;
+export default Services;
