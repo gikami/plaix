@@ -1,7 +1,9 @@
-import Header from "./Header";
-import Triplet from "./Triplet";
-import Services from "./Services";
-import guy from "./assets/images/image1.png";
+import Header from "./components/Header";
+import Triplet from "./components/Triplet";
+import Services from "./components/Services";
+import Blog from "./components/Blog";
+import Footer from "./components/Footer";
+import guy from "./assets/images/imageguy.png";
 import star from "./assets/images/responses.jpg";
 import brain from "./assets/images/go.jpg";
 import portfolio from "./assets/images/portfolio.jpg";
@@ -12,6 +14,9 @@ import promotion from "./assets/images/promotion.png";
 import social from "./assets/images/social.png";
 import bot from "./assets/images/bot.png";
 import laptop from "./assets/images/laptop.png";
+import image1 from "./assets/images/image1.png";
+import image2 from "./assets/images/image2.png";
+import image3 from "./assets/images/image3.png";
 
 function App() {
   const service = {
@@ -76,6 +81,29 @@ function App() {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et convallis penatibus nisi malesuada ut iaculis purus nisl.",
     },
   };
+  const blog = {
+    blog1: {
+      img: image1,
+      text1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      text2: "5 мин",
+      text3: "5 мин",
+      text4: "5 мин",
+    },
+    blog2: {
+      img: image2,
+      text1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      text2: "5 мин",
+      text3: "5 мин",
+      text4: "5 мин",
+    },
+    blog3: {
+      img: image3,
+      text1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      text2: "5 мин",
+      text3: "5 мин",
+      text4: "5 мин",
+    },
+  };
   return (
     <div>
       <Header />
@@ -126,8 +154,7 @@ function App() {
           </div>
         </div>
         {/* конец наши услуги */}
-
-        <div>
+        <div className="section">
           <div className="container1">
             <div className="container1-underline"></div>
             <h1>Поработаем?</h1>
@@ -137,17 +164,72 @@ function App() {
               ЗАПОЛНИТЕ ФОРМУ И НАШ МЕНЕДЖЕР СВЯЖЕТСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ
             </p>
           </div>
-          <div className="work-flex">
-            <div className="work-flex__child1">
-              <img src={laptop}></img>
-              <button>ЗАПОЛНИТЬ БРИФ</button>
-            </div>
-            <div className="work-flex__child2">
-              <form>
-
-              </form>
-            </div>
+        </div>
+        {/* <div className="work-flex">
+          <div className="work-flex__child1">
+            <img src={laptop} alt="laptop"></img>
+            <button>ЗАПОЛНИТЬ БРИФ</button>
           </div>
+          <div className="work-flex__child2">
+            <form className="work-form">
+              <div className="form-buttons">
+                <div className="form__button1">
+                  <label>
+                    <input type="checkbox" />
+                    Мне нужна консультация
+                  </label>
+                </div>
+                <div className="form__button2">
+                  <label>
+                    <input type="checkbox" />У меня есть проект
+                  </label>
+                </div>
+              </div>
+              <div className="work-flex__child3">
+                <div className="label-text">
+                  <label>Телефон</label>
+                  <br />
+                </div>
+                <input type="text" value="Телефон" />
+                <br />
+                <div className="label-text">
+                  <label>Комментарий</label>
+                  <br />
+                </div>
+                <input type="text" value="Ваш комментарий" />
+                <br />
+                <div className="last-checkbox">
+                  <label className="last-label">
+                    <input type="checkbox" />Я согласен на обработку
+                    персональных данных
+                  </label>
+                </div>
+                <br />
+                <button>ОСТАВИТЬ ЗАЯВКУ</button>
+              </div>
+            </form>
+          </div>
+        </div> */}
+        <div className="section">
+          <div className="container1">
+            <div className="container1-underline"></div>
+            <h1>Блог</h1>
+          </div>
+
+          <div className="attendance-p">
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div className="blog-flex">
+          <Blog info={blog.blog1} />
+          <Blog info={blog.blog2} />
+          <Blog info={blog.blog3} />
+        </div>
+        <div className="link-tag">
+          <a>ПЕРЕЙТИ В БЛОГ {">"}</a>
+        </div>
+        <div className="footer">
+          <Footer />
         </div>
       </div>
     </div>

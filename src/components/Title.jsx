@@ -1,4 +1,4 @@
-import guy from './assets/images/image1.png'
+import guy from './assets/images/imageguy.png';
 function Title() {
     return(
         <div className="title">

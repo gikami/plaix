@@ -1,10 +1,10 @@
-import Blog from "./pages/Blog";
-import About from "./pages/About";
-import Contacts from "./pages/Contacts";
-import Portfolio from "./pages/Portfolio";
-import Private from "./pages/Private";
-import Main from "./pages/Main";
-import Services from "./pages/Services";
+import Blog from "../pages/Blog";
+import About from "../pages/About";
+import Contacts from "../pages/Contacts";
+import Portfolio from "../pages/Portfolio";
+import Private from "../pages/Private";
+import Main from "../pages/Main";
+import Services from "../pages/Services";
 import { Routes, Route, Link } from "react-router-dom";
 
 function Header() {

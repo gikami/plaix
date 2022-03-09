@@ -8,7 +8,7 @@ function Triplet(props) {
           <h1>{props.info.text1}</h1>
           <div className="services-line"></div>
           <p>{props.info.text2}</p>
-          <a href="#">{props.info.buttonText}</a>
+          <a href="/#">{props.info.buttonText}</a>
         </div>
       </div>
     );
