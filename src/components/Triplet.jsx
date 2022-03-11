@@ -3,7 +3,7 @@
 function Triplet(props) {
     return(
         <div className="services-child">
-        <div className="services-child1">
+        <div className="services-child__elem">
           <img src={props.info.img} alt={props.info.alt} />
           <h1>{props.info.text1}</h1>
           <div className="services-line"></div>

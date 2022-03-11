@@ -1,48 +1,31 @@
 import Header from "./components/Header";
-import Triplet from "./components/Triplet";
+import Title from "./components/Title";
 import Services from "./components/Services";
+import Us from "./components/Us";
 import Blog from "./components/Blog";
+import Offers from "./components/Offers";
 import Footer from "./components/Footer";
-import guy from "./assets/images/imageguy.png";
-import star from "./assets/images/responses.jpg";
-import brain from "./assets/images/go.jpg";
-import portfolio from "./assets/images/portfolio.jpg";
+import Headline from "./components/Headline";
 import web from "./assets/images/web.png";
 import mobil from "./assets/images/mobil.png";
 import design from "./assets/images/design.png";
 import promotion from "./assets/images/promotion.png";
 import social from "./assets/images/social.png";
 import bot from "./assets/images/bot.png";
-import laptop from "./assets/images/laptop.png";
+// import laptop from "./assets/images/laptop.png";
 import image1 from "./assets/images/image1.png";
 import image2 from "./assets/images/image2.png";
 import image3 from "./assets/images/image3.png";
+import leftarrow from "./assets/images/leftarrow.png";
+import rightarrow from "./assets/images/rightarrow.png";
+import frame1 from "./assets/images/frame1.png";
+import frame2 from "./assets/images/frame2.png";
+import frame3 from "./assets/images/frame3.png";
+import frame4 from "./assets/images/frame4.png";
+import frame5 from "./assets/images/frame5.png";
+import frame6 from "./assets/images/frame6.png";
 
 function App() {
-  const service = {
-    portfolio: {
-      img: portfolio,
-      text1: "Огромное портфолио",
-      text2: "Более сотни реализованных проектов и довольных клиентов",
-      buttonText: "ПОРТФОЛИО >",
-      alt: "кейс",
-    },
-    recommendations: {
-      img: star,
-      text1: "Нас рекомендуют",
-      text2: "Более сотни реализованных проектов и довольных клиентов",
-      buttonText: "ОТЗЫВЫ >",
-      alt: "звезда",
-    },
-    insrtuments: {
-      img: brain,
-      text1: "Инструменты",
-      text2: "Только самые передовые инструменты и фреймворки",
-      buttonText: "ПЕРЕЙТИ >",
-      alt: "мозг",
-    },
-  };
-
   const services = {
     web: {
       img: web,
@@ -104,136 +87,102 @@ function App() {
       text4: "5 мин",
     },
   };
+  const headline = {
+    headline1: {
+      text1: "Наши услуги",
+      text2: "LOREM IPSUM DOLOR SIT AMET",
+    },
+    headline2: {
+      text1: "О Нас",
+      text2: "LOREM IPSUM DOLOR SIT AMET",
+    },
+    headline3: {
+      text1: "Спецпредожения",
+      text2: "LOREM IPSUM DOLOR SIT AMET",
+    },
+    headline4: {
+      text1: "Поработаем?",
+      text2: "Заполните форму и наш менеджер свяжется с вами в ближайшее время",
+    },
+    headline5: {
+      text1: "Блог",
+      text2: "LOREM IPSUM DOLOR SIT AMET",
+    },
+  };
+  const offers = {
+    offer1: {
+      img: frame1
+    },
+    offer2: {
+      img: frame2
+    },
+    offer3: {
+      img: frame3
+    },
+    offer4: {
+      img: frame4
+    },
+    offer5: {
+      img: frame5
+    },
+    offer6: {
+      img: frame6
+    },
+  }
   return (
     <div>
       <Header />
-      <div className="wrapper">
-        <div className="title">
-          <div className="title-child1">
-            <h1>LOREM IPSUM DOLOR</h1>
-            <h2>
-              <span>Lorem</span> ipsum dolor
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              tempus nibh diam morbi id.
-            </p>
-            <button>ЗАКАЗАТЬ ПРОЕКТ</button>
+      <Title />
+      <div className="ourservices">
+        <div className="ourservices-wrapper">
+          <Headline info={headline.headline1} />
+          <div className="ourservices-grid">
+            <Services info={services.web} />
+            <Services info={services.mobil} />
+            <Services info={services.design} />
+            <Services info={services.promotion} />
+            <Services info={services.social} />
+            <Services info={services.bot} />
           </div>
-          <div className="title-child2">
-            <img src={guy} alt="title guy" />
-          </div>
-        </div>
-
-        {/* triplet */}
-
-        <div className="services-container">
-          <Triplet info={service.portfolio} />
-          <Triplet info={service.recommendations} />
-          <Triplet info={service.insrtuments} />
-        </div>
-
-        {/* наши услуги */}
-        <div className="attendance">
-          <div className="attendance-wrapper">
-            <div className="container1">
-              <div className="container1-underline"></div>
-              <h1>Наши услуги</h1>
-            </div>
-            <div className="attendance-p">
-              <p>LOREM IPSUM DOLOR SIT AMET</p>
-            </div>
-            <div className="attendance-grid">
-              <Services info={services.web} />
-              <Services info={services.mobil} />
-              <Services info={services.design} />
-              <Services info={services.promotion} />
-              <Services info={services.social} />
-              <Services info={services.bot} />
-            </div>
-          </div>
-        </div>
-        {/* конец наши услуги */}
-        <div className="section">
-          <div className="container1">
-            <div className="container1-underline"></div>
-            <h1>Поработаем?</h1>
-          </div>
-          <div className="attendance-p">
-            <p>
-              ЗАПОЛНИТЕ ФОРМУ И НАШ МЕНЕДЖЕР СВЯЖЕТСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ
-            </p>
-          </div>
-        </div>
-        {/* <div className="work-flex">
-          <div className="work-flex__child1">
-            <img src={laptop} alt="laptop"></img>
-            <button>ЗАПОЛНИТЬ БРИФ</button>
-          </div>
-          <div className="work-flex__child2">
-            <form className="work-form">
-              <div className="form-buttons">
-                <div className="form__button1">
-                  <label>
-                    <input type="checkbox" />
-                    Мне нужна консультация
-                  </label>
-                </div>
-                <div className="form__button2">
-                  <label>
-                    <input type="checkbox" />У меня есть проект
-                  </label>
-                </div>
-              </div>
-              <div className="work-flex__child3">
-                <div className="label-text">
-                  <label>Телефон</label>
-                  <br />
-                </div>
-                <input type="text" value="Телефон" />
-                <br />
-                <div className="label-text">
-                  <label>Комментарий</label>
-                  <br />
-                </div>
-                <input type="text" value="Ваш комментарий" />
-                <br />
-                <div className="last-checkbox">
-                  <label className="last-label">
-                    <input type="checkbox" />Я согласен на обработку
-                    персональных данных
-                  </label>
-                </div>
-                <br />
-                <button>ОСТАВИТЬ ЗАЯВКУ</button>
-              </div>
-            </form>
-          </div>
-        </div> */}
-        <div className="section">
-          <div className="container1">
-            <div className="container1-underline"></div>
-            <h1>Блог</h1>
-          </div>
-
-          <div className="attendance-p">
-            <p>Lorem ipsum dolor sit amet</p>
-          </div>
-        </div>
-        <div className="blog-flex">
-          <Blog info={blog.blog1} />
-          <Blog info={blog.blog2} />
-          <Blog info={blog.blog3} />
-        </div>
-        <div className="link-tag">
-          <a>ПЕРЕЙТИ В БЛОГ {">"}</a>
-        </div>
-        <div className="footer">
-          <Footer />
         </div>
       </div>
+      <div className="us-wrapper">
+        <Us />
+        {/* <Headline info={headline.headline2} /> */}
+      </div>
+      <div className="section">
+        <Headline info={headline.headline3} />
+      </div>
+      <div className="offers-wrapper">
+            <div className="offers-flex">
+                <Offers info={offers.offer1}/>
+                <Offers info={offers.offer2}/>
+                <Offers info={offers.offer3}/>
+                <Offers info={offers.offer4}/>
+                <Offers info={offers.offer5}/>
+                <Offers info={offers.offer6}/>
+            </div>
+            <button className="offers-left"><img src={leftarrow} alt="leftarrow"></img></button>
+            <button className="offers-right"><img src={rightarrow} alt="rightarrow"></img></button>
+        </div>
+      <div className="section">
+        <Headline info={headline.headline4} />
+      </div>
+      <div className="section">
+        <Headline info={headline.headline5} />
+      </div>
+      <div className="blog-flex">
+        <Blog info={blog.blog1} />
+        <Blog info={blog.blog2} />
+        <Blog info={blog.blog3} />
+      </div>
+      <div className="link-tag">
+        <a href="/#">ПЕРЕЙТИ В БЛОГ {">"}</a>
+      </div>
+      <Footer />
     </div>
   );
 }
 
 export default App;
+

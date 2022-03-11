@@ -5,19 +5,20 @@ import Portfolio from "../pages/Portfolio";
 import Private from "../pages/Private";
 import Main from "../pages/Main";
 import Services from "../pages/Services";
+import logoplaix from "../assets/images/logoplaix.png";
 import { Routes, Route, Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header">
-      <div className="child1">
-        <h1>Logo</h1>
+      <div className="header-child1">
+        <img src={logoplaix} alt="logoplaix" />
       </div>
-      <div className="child2">
+      <div className="header-child2">
         <nav>
-          <ul className="child2__ul">
+          <ul className="header-child2__ul">
           <Link to="/main">Главная</Link>
-            <div className="child2-arrow">
+            <div className="header-child2-arrow">
               <div>
                 <Link to="/services">Услуги</Link>
               </div>

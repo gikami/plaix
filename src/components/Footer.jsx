@@ -7,6 +7,7 @@ import vk from "../assets/images/vk.png";
 
 function Footer() {
   return (
+    <div className="footer">
     <footer className="footer-flex">
       <div className="footer-flex__elem1">
         <img src={logoplaix} alt="logoplaix" />
@@ -16,11 +17,11 @@ function Footer() {
       </div>
       <div className="footer-flex__elem2">
         <p>Мы в соц. сетях</p>
-        <img src={inst}></img>
-        <img src={vk}></img>
-        <img src={telegram}></img>
-        <img src={whatsapp}></img>
-        <img src={facebook}></img>
+        <img src={inst} alt="instagram icon"></img>
+        <img src={vk} alt="vk icon"></img>
+        <img src={telegram} alt="telegram icon"></img>
+        <img src={whatsapp} alt="whatsapp icon"></img>
+        <img src={facebook} alt="facebook icon"></img>
       </div>
       <div className="footer-flex__elem3">
         <p>
@@ -31,6 +32,7 @@ function Footer() {
         <p>Ds@asmpromo.ru</p>
       </div>
     </footer>
+    </div>
   );
 }
 export default Footer;

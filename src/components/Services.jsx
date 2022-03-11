@@ -1,5 +1,4 @@
 function Services(props) {
-    console.log(props.services)
   return (
     <div className="grid-elem">
       <img src={props.info.img} alt="web" />
@@ -7,7 +6,7 @@ function Services(props) {
         <h1>{props.info.text1}</h1>
         <div className="grid-line"></div>
         <p>{props.info.text2}</p>
-        <a href="#">Перейти</a>
+        <a href="/">Перейти</a>
       </div>
     </div>
   );

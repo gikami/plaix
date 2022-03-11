@@ -2,7 +2,6 @@ import time from "../assets/images/time.png";
 import eye from "../assets/images/eye.png";
 import calendar from "../assets/images/calendar.png";
 function Blog(props) {
-  console.log(props);
   return (
     <div className="blog-flex__elem1">
       <img src={props.info.img} alt="image1"></img>
