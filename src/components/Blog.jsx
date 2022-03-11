@@ -8,15 +8,20 @@ function Blog(props) {
       <div className="blog-child">
         <div className="blog-child1">
           <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+          <div className="blog-child3">
+          <img src={time} alt="time"></img>
           <p>
-            <img src={time} alt="time"></img>5 мин
+            5 мин
           </p>
+          <img src={eye} alt="eye"></img>
           <p>
-            <img src={eye} alt="eye"></img>128
+            128
           </p>
+          <img src={calendar} alt="calendar"></img>
           <p>
-            <img src={calendar} alt="calendar"></img>12.01.2022
+            12.01.2022
           </p>
+          </div>
         </div>
       </div>
       <div className="blog-child2">

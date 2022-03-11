@@ -4,6 +4,9 @@ import threeppl from "../assets/images/threeppl.png";
 import twoppl from "../assets/images/twoppl.png";
 import designer from "../assets/images/designer.png";
 import cup from "../assets/images/cup.png";
+import leftarrow from "../assets/images/leftarrow.png";
+import rightarrow from "../assets/images/rightarrow.png";
+
 
 function Us() {
   return (
@@ -58,6 +61,16 @@ function Us() {
         </div>
         <div className="us-child2__elem5">
           <img src={cup} alt="cup"></img>
+        </div>
+        <div className="us-child2__elem6">
+          <button>
+            <img src={leftarrow} alt="leftarrow"></img>
+          </button>
+        </div>
+        <div className="us-child2__elem7">
+          <button>
+            <img src={rightarrow} alt="rightarrow"></img>
+          </button>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Title from "./components/Title";
 import Services from "./components/Services";
 import Us from "./components/Us";
+import Work from "./components/Work";
 import Blog from "./components/Blog";
 import Offers from "./components/Offers";
 import Footer from "./components/Footer";
@@ -12,7 +13,6 @@ import design from "./assets/images/design.png";
 import promotion from "./assets/images/promotion.png";
 import social from "./assets/images/social.png";
 import bot from "./assets/images/bot.png";
-// import laptop from "./assets/images/laptop.png";
 import image1 from "./assets/images/image1.png";
 import image2 from "./assets/images/image2.png";
 import image3 from "./assets/images/image3.png";
@@ -24,6 +24,7 @@ import frame3 from "./assets/images/frame3.png";
 import frame4 from "./assets/images/frame4.png";
 import frame5 from "./assets/images/frame5.png";
 import frame6 from "./assets/images/frame6.png";
+import flower from "./assets/images/flower.png";
 
 function App() {
   const services = {
@@ -148,7 +149,6 @@ function App() {
       </div>
       <div className="us-wrapper">
         <Us />
-        {/* <Headline info={headline.headline2} /> */}
       </div>
       <div className="section">
         <Headline info={headline.headline3} />
@@ -168,6 +168,10 @@ function App() {
       <div className="section">
         <Headline info={headline.headline4} />
       </div>
+      <div className="work-wrapper">
+        <Work />
+        <img className="flower-img" src={flower} alt="flower"></img>
+      </div>
       <div className="section">
         <Headline info={headline.headline5} />
       </div>
@@ -175,6 +179,7 @@ function App() {
         <Blog info={blog.blog1} />
         <Blog info={blog.blog2} />
         <Blog info={blog.blog3} />
+       
       </div>
       <div className="link-tag">
         <a href="/#">ПЕРЕЙТИ В БЛОГ {">"}</a>
