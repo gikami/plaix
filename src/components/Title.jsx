@@ -47,7 +47,7 @@ function Title() {
           <img src={guy} alt="title guy" />
         </div>
       </div>
-      <div className="services">
+      <div className="services"> 
         <Triplet info={service.portfolio} />
         <Triplet info={service.recommendations} />
         <Triplet info={service.insrtuments} />
@@ -57,3 +57,5 @@ function Title() {
 }
 
 export default Title;
+
+

@@ -12,7 +12,7 @@ function Us() {
   return (
     <div className="us-container">
       <div className="us-child1">
-        <div className="headline">
+        <div className="headline headline2">
           <div className="headline-child1">
             <div className="headline-underline"></div>
             <h1>О Нас</h1>

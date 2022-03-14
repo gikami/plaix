@@ -1,3 +1,4 @@
+
 import Header from "./components/Header";
 import Title from "./components/Title";
 import Services from "./components/Services";
@@ -25,6 +26,8 @@ import frame4 from "./assets/images/frame4.png";
 import frame5 from "./assets/images/frame5.png";
 import frame6 from "./assets/images/frame6.png";
 import flower from "./assets/images/flower.png";
+
+
 
 function App() {
   const services = {
@@ -130,14 +133,17 @@ function App() {
       img: frame6
     },
   }
+
+  // ourservices-grid 
   return (
     <div>
       <Header />
+     
       <Title />
       <div className="ourservices">
         <div className="ourservices-wrapper">
           <Headline info={headline.headline1} />
-          <div className="ourservices-grid">
+          <div className="row justify-content-center ha">
             <Services info={services.web} />
             <Services info={services.mobil} />
             <Services info={services.design} />
@@ -150,6 +156,7 @@ function App() {
       <div className="us-wrapper">
         <Us />
       </div>
+      <div className="offers-margin">
       <div className="section">
         <Headline info={headline.headline3} />
       </div>
@@ -161,9 +168,11 @@ function App() {
                 <Offers info={offers.offer4}/>
                 <Offers info={offers.offer5}/>
                 <Offers info={offers.offer6}/>
+               
             </div>
             <button className="offers-left"><img src={leftarrow} alt="leftarrow"></img></button>
             <button className="offers-right"><img src={rightarrow} alt="rightarrow"></img></button>
+        </div>
         </div>
       <div className="section">
         <Headline info={headline.headline4} />
@@ -184,6 +193,7 @@ function App() {
       <div className="link-tag">
         <a href="/#">ПЕРЕЙТИ В БЛОГ {">"}</a>
       </div>
+    
       <Footer />
     </div>
   );

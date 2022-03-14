@@ -1,6 +1,8 @@
 
+
 function Offers(props) {
     return(
+    
         <div className="offers">
             <img src={props.info.img} alt="phoneicon" />
             <div className="offers-text">
@@ -8,6 +10,7 @@ function Offers(props) {
                 <p>Lorem ipsum dolor sit amet, consectetur </p>
             </div>
         </div>
+       
     );
 }
 

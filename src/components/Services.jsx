@@ -1,6 +1,6 @@
 function Services(props) {
   return (
-    <div className="grid-elem">
+    <div className="services-flex col-md-4 flex-column justify-content-center flex-fill">
       <img src={props.info.img} alt="web" />
       <div className="grid-text">
         <h1>{props.info.text1}</h1>
@@ -13,3 +13,7 @@ function Services(props) {
 }
 
 export default Services;
+
+
+
+// grid-elem
