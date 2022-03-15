@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.38a89ba0.css",
+    "main.js": "/static/js/main.0658d092.js",
+    "static/media/imageguy.png": "/static/media/imageguy.558b357d438df7981756.png",
+    "static/media/image3.png": "/static/media/image3.ce3dde1894668c8d12ff.png",
+    "static/media/image1.png": "/static/media/image1.474ef317ca80aa41eb8a.png",
+    "static/media/designerpic.png": "/static/media/designerpic.1203591f7eb1a03d2eeb.png",
+    "static/media/laptop.png": "/static/media/laptop.99f93af327c3f0e40860.png",
+    "static/media/image2.png": "/static/media/image2.f35beb7f210948f88852.png",
+    "static/media/frame2.png": "/static/media/frame2.e892683e2977463713d1.png",
+    "static/media/social.png": "/static/media/social.22a0d6044a45b12ab28b.png",
+    "static/media/mobil.png": "/static/media/mobil.5baf0ffe8188dd3a02fb.png",
+    "static/media/threeppl.png": "/static/media/threeppl.943a07c8dbc6405ffbb5.png",
+    "static/media/web.png": "/static/media/web.5a7ae19fe9d161bbe290.png",
+    "static/media/design.png": "/static/media/design.a30f4f8c3036686aab03.png",
+    "static/media/frame6.png": "/static/media/frame6.6c67378501ba428c1ddb.png",
+    "static/media/frame1.png": "/static/media/frame1.e591acb293f422ca017a.png",
+    "static/media/frame4.png": "/static/media/frame4.e060234420809d525cfa.png",
+    "static/media/twoppl.png": "/static/media/twoppl.cf836c786f20b89c2bbf.png",
+    "static/media/promotion.png": "/static/media/promotion.b34d03b1addf0c0130e6.png",
+    "static/media/frame3.png": "/static/media/frame3.f00f492ea2fd8681423a.png",
+    "static/media/frame5.png": "/static/media/frame5.8c10f752c5bb5f6d52c6.png",
+    "static/media/background1.jpg": "/static/media/background1.ddd65ad171b50646609f.jpg",
+    "static/media/bot.png": "/static/media/bot.85ec459b6ce442a14ac6.png",
+    "static/media/flower.png": "/static/media/flower.82c80acd9529caf56fb6.png",
+    "static/media/cup.png": "/static/media/cup.71031bd8d052c393d528.png",
+    "static/media/go.jpg": "/static/media/go.d42b2d074f399213ae64.jpg",
+    "static/media/responses.jpg": "/static/media/responses.6cdc82d159469137d5b5.jpg",
+    "index.html": "/index.html",
+    "main.38a89ba0.css.map": "/static/css/main.38a89ba0.css.map",
+    "main.0658d092.js.map": "/static/js/main.0658d092.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38a89ba0.css",
+    "static/js/main.0658d092.js"
+  ]
+}
