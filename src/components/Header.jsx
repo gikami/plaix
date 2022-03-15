@@ -7,9 +7,21 @@ import Main from "../pages/Main";
 import Services from "../pages/Services";
 import logoplaix from "../assets/images/logoplaix.png";
 import { Routes, Route, Link } from "react-router-dom";
+import { useState } from "react";
+import Dropdown from "./Dropdown";
 
 function Header() {
+
+
+const [toggle, setToggle] = useState(false);
+const toggler = () => {
+  toggle ? setToggle(false): setToggle(true);
+};
+const headerToggle = toggle ? <Dropdown />: null;
+
+
   return (
+    <div className="header-wrapper">
     <div className="header">
       <div className="header-child1">
         <img src={logoplaix} alt="logoplaix" />
@@ -20,9 +32,9 @@ function Header() {
           <Link to="/main">Главная</Link>
             <div className="header-child2-arrow">
               <div>
-                <Link to="/services">Услуги</Link>
+                <Link to="/">Услуги</Link>
               </div>
-              <button></button>
+              <button onClick={toggler}></button>
             </div>
             <Link to="/portfolio">Портфолио</Link>
             <Link to="/about">О Нас</Link>
@@ -43,6 +55,8 @@ function Header() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/private" element={<Private />} />
       </Routes>
+    </div>
+    {headerToggle}
     </div>
   );
 }
