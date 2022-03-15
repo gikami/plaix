@@ -28,7 +28,7 @@ p {
   line-height: 25px;
   color: #181818;
 }
-/* font-size: 25px; */
+
 .header a {
   list-style: none;
   margin-right: 56px;
@@ -90,6 +90,9 @@ a:last-child {
   object-fit: contain;
   transform: translateY(-38px);
 }
+.title-child1__h1 {
+  max-width: 1336px;
+}
 
 .title-child1 p {
   max-width: 650px;
@@ -117,7 +120,7 @@ a:last-child {
   height: 695px;
 }
 .title-child2 img {
-  height: auto;
+  height: 773px;
   width: 100%;
 }
 
@@ -128,7 +131,7 @@ a:last-child {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1294px;
-  transform: translateY(-77px);
+  transform: translateY(-23px);
 }
 
 .services-child {
@@ -414,6 +417,7 @@ a:last-child {
   align-items: center;
   flex-direction: column;
   max-width: 744px;
+  margin-top: 40px;
 }
 .work-child2 {
   box-shadow: 4px 4px 22px rgba(0, 0, 0, 0.07);
@@ -442,6 +446,11 @@ a:last-child {
   background-color: #f6f6f6;
   padding: 0 26px;
   margin-bottom: 29px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #B7B7B7;
 }
 .work-child4__elem2::placeholder {
   font-family: "Rubik", sans-serif;
@@ -460,6 +469,11 @@ a:last-child {
   background-color: #f6f6f6;
   padding: 0 26px;
   margin-bottom: 29px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #B7B7B7;
 }
 .work-child4__elem4::placeholder {
   font-family: "Rubik", sans-serif;
@@ -471,6 +485,7 @@ a:last-child {
   background-color: #f6f6f6;
   text-align: start;
   align-items: flex-start;
+  
 }
 .work-child4__elem6 {
   font-weight: 300;
@@ -620,7 +635,7 @@ a:last-child {
   margin: 0 auto;
   max-width: 1895px;
   text-align: center;
-  margin-bottom: 163px;
+  margin-bottom: 213px;
 }
 
 .link-tag a {
@@ -870,9 +885,14 @@ a:last-child {
     flex-direction: column;
   }
   .title-child1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 1541px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1464px) {
+  .title-child1 {
+    max-width: 1464px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 1187px) {

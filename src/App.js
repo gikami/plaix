@@ -113,7 +113,6 @@ function App() {
   return (
     <div>
       <Header />
-
       <Title />
       <div className="ourservices">
         <div className="ourservices-wrapper">
@@ -151,7 +150,6 @@ function App() {
         <Blog info={blog.blog1} />
         <Blog info={blog.blog2} />
         <Blog info={blog.blog3} />
-       
       </div>
       <div className="link-tag">
         <a href="/#">ПЕРЕЙТИ В БЛОГ {">"}</a>
