@@ -1,5 +1,6 @@
 
 import Header from "./components/Header";
+import Dropdown from "./components/Dropdown";
 import Title from "./components/Title";
 import Services from "./components/Services";
 import Us from "./components/Us";
@@ -138,12 +139,11 @@ function App() {
   return (
     <div>
       <Header />
-     
       <Title />
       <div className="ourservices">
         <div className="ourservices-wrapper">
           <Headline info={headline.headline1} />
-          <div className="row justify-content-center ha">
+          <div className="row justify-content-center">
             <Services info={services.web} />
             <Services info={services.mobil} />
             <Services info={services.design} />
@@ -193,8 +193,8 @@ function App() {
       <div className="link-tag">
         <a href="/#">ПЕРЕЙТИ В БЛОГ {">"}</a>
       </div>
-    
       <Footer />
+      <Dropdown/>
     </div>
   );
 }

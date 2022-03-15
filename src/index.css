@@ -124,8 +124,7 @@ a:last-child {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1294px;
-  transform: translateY(8px);
-  
+  transform: translateY(-77px);
 }
 
 .services-child {
@@ -241,10 +240,7 @@ a:last-child {
   max-width: 1314px;
   margin-bottom: 280px;
 }
-/* .ha {
-  max-width: 1314px;
-  margin: 0 auto;
-} */
+
 .services-flex {
   margin: 44px 31px;
   border-radius: 20px;
@@ -794,6 +790,32 @@ a:last-child {
 }
 .footer-flex__elem2 img {
   margin-right: 11px;
+}
+
+/* dropdown */
+
+.drop-wrapper {
+  margin: 0 auto;
+  max-width: 1885px;
+}
+.drop-flex {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1517px;
+  margin: 0 auto;
+}
+
+.drop-child1 {
+  background-color: #F6F6F6;
+}
+.drop-child1__ul {
+  padding: 0;
+}
+.drop-child1__ul li {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  list-style-type: none;
 }
 
 
