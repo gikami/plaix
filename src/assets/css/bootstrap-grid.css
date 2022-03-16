@@ -5049,5 +5049,10 @@
     display: none !important;
   }
 }
+@media (max-width: 360px) {
+  .row {
+    margin: 0
+  }
+}
 
 /*# sourceMappingURL=bootstrap-grid.css.map */

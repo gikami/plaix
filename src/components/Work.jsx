@@ -1,4 +1,7 @@
 import laptop from "../assets/images/laptop.png";
+
+
+
 function Work() {
   return (
     <div className="work">
@@ -9,6 +12,15 @@ function Work() {
         </div>
       </div>
       <form className="work-child2">
+      <div className="headline hidden-headline">
+            <div className="headline-child1">
+              <div className="headline-underline"></div>
+              <h1>Поработаем?</h1>
+            </div>
+            <div className="headline-child2">
+              <p>Заполните форму и наш менеджер свяжется с вами в ближайшее время</p>
+            </div>
+            </div>
         <div className="work-child3">
           <div className="work-child3__elem1">
             <input type="radio" checked="checked"></input>

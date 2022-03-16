@@ -1,4 +1,3 @@
-
 import Header from "./components/Header";
 import Title from "./components/Title";
 import Services from "./components/Services";
@@ -18,11 +17,8 @@ import image2 from "./assets/images/image2.png";
 import image3 from "./assets/images/image3.png";
 import flower from "./assets/images/flower.png";
 import Swipe from "./Swiper";
-
-
-
-
-
+import purplebutt from "./assets/images/purplebutt.png";
+import SwiperBlog from "./SwiperBlog";
 
 function App() {
   const services = {
@@ -108,13 +104,16 @@ function App() {
       text2: "LOREM IPSUM DOLOR SIT AMET",
     },
   };
-  
 
   return (
-    <div>
-      <Header />
-      <Title />
-      <div className="ourservices">
+    <div className="wrapper">
+      <div className="section-1">
+        <Header />
+      </div>
+      <div className="section-2">
+        <Title />
+      </div>
+      <div className="section-3 ourservices">
         <div className="ourservices-wrapper">
           <Headline info={headline.headline1} />
           <div className="row justify-content-center">
@@ -127,39 +126,58 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="us-wrapper">
+      <div className="section-4 us-wrapper">
         <Us />
       </div>
-      <div className="offers-margin">
-      <div className="section">
-        <Headline info={headline.headline3} />
-      </div>
-      <Swipe />
+      <div className="section-5 offers-margin">
+        <div className="section">
+          <Headline info={headline.headline3} />
         </div>
-      <div className="section">
-        <Headline info={headline.headline4} />
+        <Swipe />
       </div>
-      <div className="work-wrapper">
-        <Work />
-        <img className="flower-img" src={flower} alt="flower"></img>
+      <div className="section-6">
+        <div className="section section-6-headline">
+          <Headline info={headline.headline4} />
+        </div>
+        <div className="work-wrapper">
+          <Work />
+          <div className="flower-display">
+          <img className="flower-img" src={flower} alt="flower"></img>
+          </div>
+        </div>
       </div>
-      <div className="section">
-        <Headline info={headline.headline5} />
+      <div className="section-7">
+        <div className="section">
+          <Headline info={headline.headline5} />
+        </div>
+        <div className="blog-flex">
+          <Blog info={blog.blog1} />
+          <Blog info={blog.blog2} />
+          <Blog info={blog.blog3} />
+        </div>
+        <div className="swiper-blog">
+        <SwiperBlog />
+        </div>
+        <div className="link-tag">
+          <a href="/#">ПЕРЕЙТИ В БЛОГ {">"}</a>
+        </div>
       </div>
-      <div className="blog-flex">
-        <Blog info={blog.blog1} />
-        <Blog info={blog.blog2} />
-        <Blog info={blog.blog3} />
+      <div className="section-8">
+        <Footer />
       </div>
-      <div className="link-tag">
-        <a href="/#">ПЕРЕЙТИ В БЛОГ {">"}</a>
+      <div className="section-9">
+        <div className="section-9__butt">
+          <div className="section-9-text">
+          <p>У Вас есть проект для нас?</p>
+          <h1>Заполнить Бриф</h1>
+          </div>
+          <a href="/">
+            <img src={purplebutt} />
+          </a>
+        </div>
       </div>
-      <Footer />
     </div>
   );
 }
 
 export default App;
-
-
-

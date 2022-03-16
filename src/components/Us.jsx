@@ -6,6 +6,7 @@ import designer from "../assets/images/designer.png";
 import cup from "../assets/images/cup.png";
 import leftarrow from "../assets/images/leftarrow.png";
 import rightarrow from "../assets/images/rightarrow.png";
+import pencil from "../assets/images/pencil.png"
 
 
 function Us() {
@@ -72,12 +73,13 @@ function Us() {
             <img src={rightarrow} alt="rightarrow"></img>
           </button>
         </div>
+        <div className="us-child2__elem8">
+          <img src={pencil} alt="pencil"></img>
+        </div>
       </div>
     </div>
   );
 }
 export default Us;
 
-{
-  /* <Headline info={headline.headline2} /> */
-}
+
